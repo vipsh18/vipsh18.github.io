@@ -32,6 +32,11 @@
 	font-weight: bold;
 }
 
+.education_duration::before {
+	content: '\A';
+	white-space: pre;
+}
+
 .rs_fr_content {
 	float: right;
 }
@@ -50,10 +55,54 @@
 
 /* for tabs */
 @media screen and (max-width: 1000px) {
-	//
+	.resume_maindiv {
+		padding: 1rem 0.8rem 1rem 0.8rem;
+	}
+
+	.resume_sections {
+		padding: 0.7rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.resume_sections_headers {
+		font-size: 1.8rem;
+	}
+
+	.resume_sections_content,
+	.resume_sections_content_notoppadding,
+	.resume_sections_subheaders {
+		font-size: 1.1rem;
+	}
 }
 
 /* for mobiles */
 @media screen and (max-width: 768px) {
-	//
+	.resume_maindiv {
+		padding: 0.5rem;
+	}
+
+	.resume_sections {
+		padding: 0.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.resume_sections_headers {
+		font-size: 1.5rem;
+	}
+
+	.resume_sections_content,
+	.resume_sections_content_notoppadding,
+	.resume_sections_subheaders {
+		font-size: 1rem;
+	}
+
+	.rs_fr_content {
+		float: none;
+		display: block;
+	}
+
+	.education_duration::before {
+		content: '';
+		white-space: pre;
+	}
 }
