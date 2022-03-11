@@ -1,0 +1,59 @@
+.resume_maindiv {
+	padding: 2rem 20rem 5rem 20rem;
+}
+
+.resume_sections {
+	padding: 1rem;
+}
+
+.resume_sections_headers {
+	color: var(--back-light);
+	font-size: 2.3rem;
+	font-weight: 700;
+}
+
+.resume_sections_content {
+	padding: 0.2rem;
+	font-size: 1.2rem;
+}
+
+.resume_sections_content_notoppadding {
+	font-size: 1.2rem;
+	padding: 0 0.2rem 0 0.2rem;
+}
+
+.overview_ul {
+	list-style: none;
+}
+
+.resume_sections_subheaders {
+	padding: 0.2rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.rs_fr_content {
+	float: right;
+}
+
+.rss_education_head::before {
+	content: '🎓';
+}
+
+.rss_technical_head::before {
+	content: '⭐';
+}
+
+.rss_project_head::before {
+	content: '⌨️';
+}
+
+/* for tabs */
+@media screen and (max-width: 1000px) {
+	//
+}
+
+/* for mobiles */
+@media screen and (max-width: 768px) {
+	//
+}
