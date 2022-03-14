@@ -15,6 +15,7 @@
 .resume_sections_content {
 	padding: 0.2rem;
 	font-size: 1.2rem;
+	margin-left: 1rem;
 }
 
 .resume_sections_content_notoppadding {
@@ -51,6 +52,12 @@
 
 .rss_project_head::before {
 	content: '⌨️';
+	position: relative;
+	top: -0.1rem;
+}
+
+.project_stack {
+	font-weight: bold;
 }
 
 /* for tabs */
@@ -73,6 +80,10 @@
 	.resume_sections_subheaders {
 		font-size: 1.1rem;
 	}
+
+	.resume_sections_content {
+		margin-left: 0;
+	}
 }
 
 /* for mobiles */
@@ -82,7 +93,7 @@
 	}
 
 	.resume_sections {
-		padding: 0.5rem;
+		padding: 0.5rem 0.3rem 0.5rem 0.3rem;
 		margin-bottom: 1rem;
 	}
 
@@ -104,5 +115,9 @@
 	.education_duration::before {
 		content: '';
 		white-space: pre;
+	}
+
+	.resume_sections_content {
+		padding: 0.2rem 0 0.2rem 0;
 	}
 }
